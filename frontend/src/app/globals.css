@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --navy-900: #0B192C;
+    --navy-800: #1E3E62;
+    --navy-700: #19376D;
+    --navy-50: #F0F4F8;
+    --teal-600: #0D9488;
+    --teal-500: #14B8A6;
+    --teal-400: #2DD4BF;
+    --teal-50: #F0FDFA;
+    --card-border: #E2E8F0;
+    --text-primary: #0F172A;
+    --text-muted: #64748B;
+  }
+
+  body {
+    background-color: #F8FAFC;
+    color: #0F172A;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom Utilities for Fintech Clarity */
+.card-subtle {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-subtle:hover {
+  border-color: #CBD5E1;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.06), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+}
+
+.card-primary {
+  background: linear-gradient(135deg, #0B192C 0%, #1E3E62 100%);
+  color: #FFFFFF;
+  border-radius: 1rem;
+}
+
+.badge-teal {
+  background-color: #F0FDFA;
+  color: #0F766E;
+  border: 1px solid #CCFBF1;
+  font-weight: 600;
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.input-fintech {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid #CBD5E1;
+  background-color: #FFFFFF;
+  padding: 0.65rem 0.85rem;
+  font-size: 0.95rem;
+  color: #0F172A;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.input-fintech:focus {
+  outline: none;
+  border-color: #0D9488;
+  box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.15);
+}
+
+.btn-primary {
+  background-color: #0B192C;
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.625rem;
+  transition: all 0.18s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-primary:hover {
+  background-color: #1E3E62;
+  box-shadow: 0 4px 12px rgba(11, 25, 44, 0.18);
+  transform: translateY(-1px);
+}
+
+.btn-teal {
+  background-color: #0D9488;
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.625rem;
+  transition: all 0.18s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-teal:hover {
+  background-color: #0F766E;
+  box-shadow: 0 4px 12px rgba(13, 148, 136, 0.25);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: #FFFFFF;
+  color: #0B192C;
+  font-weight: 600;
+  border: 1px solid #E2E8F0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.625rem;
+  transition: all 0.18s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-secondary:hover {
+  background-color: #F8FAFC;
+  border-color: #CBD5E1;
+}
